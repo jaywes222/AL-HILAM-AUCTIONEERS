@@ -7,7 +7,6 @@ module.exports = {
     "./app/**/*.{js,jsx}",
     "./src/**/*.{js,jsx}",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -17,20 +16,6 @@ module.exports = {
       },
     },
     extend: {
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
       fontFamily: {
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
@@ -38,64 +23,45 @@ module.exports = {
         openSans: ["Open Sans", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
-      backgroundImage: {
-        landingPageBg: "url('/landing-bg.png')",
-        eventRSVPDesktop: "url('/event-RSVP-desktop.png')",
-        eventRSVPMobile: "url('/event-RSVP-mobile.png')",
-        "glow-primary": "linear-gradient(to right, transparent, rgba(96,206,85,0.4), transparent)",
-        "glow-primary-soft": "linear-gradient(to right, transparent, rgba(96,206,85,0.25), transparent)",
-        "grad-primary": "linear-gradient(to right, #A8E6A3, #FBE8A6)", // soft green → soft yellow
-        "grad-active-bg": "linear-gradient(to right, rgba(168,230,163,0.1), rgba(251,232,166,0.1))",
-        "grad-active-bg-mobile": "linear-gradient(to right, rgba(168,230,163,0.2), rgba(251,232,166,0.2))",
-      },
+
+      /* ─── COLOR SYSTEM ─── */
       colors: {
-        /* ─── Primary system ─── */
-        primary: "#49CC90",      // swagger green base
-        secondary: "#4caf50",    // slightly darker complementary
+        /* Main brand */
+        secondary: "#ADD8E6",     // MAIN COLOR (dominant)
+        primary: "#7B6CF6",       // Accent (purple only)
 
-        /* ─── Green scale ─── */
-        green: {
-          dark: "#2E7D32",       // dark forest green
-          hero: "#38B67D",       // lively forest green
-          header: "#60CE55",     // main swagger green
-          light: "#DFFFE1",      // minty/light green tint
-          footer: "#FACC15",     // bright yellow accent stays
+        /* Blues (supporting) */
+        blue: {
+          dark: "#2F4858",       // Text on light blue
+          soft: "#6FA8DC",       // Borders / subtle hover
+          tint: "#EAF4FB",       // Backgrounds
         },
 
-        /* ─── Neutral greys (green-warmed) ─── */
+        /* Neutrals (blue-warmed) */
         grey: {
-          light: "#EDF7F0",      // very soft, near white
-          neutral: "#7BB78A",    // olive-neutral, mid light
-          mild: "#C4E6D0",       // muted sage/green
-          dark: "#3D6044",       // soft dark forest
-          darker: "#95C7A7",     // mid sage, lightened
+          light: "#F2F8FB",
+          mild: "#D6E9F4",
+          neutral: "#8FB7CC",
+          darker: "#5F7F96",
+          dark: "#2F4858",
         },
 
-        text: {
-          primary: "#60CE55",     // dark forest green for main text
-          secondary: "#4caf50",   // slightly darker for subheadings
-          muted: "#7BB78A",      // olive-neutral for less emphasis
+        /* Purple accents */
+        purple: {
+          hero: "#7B6CF6",
+          soft: "#9B8AFB",
+          deep: "#4F46B5",
         },
 
-
-        /* ─── Status colors ─── */
+        /* Status */
         error: {
           bg: "#FEF3F2",
           text: "#B42318",
         },
+      },
 
-        /* ─── Yellow accents ─── */
-        yellow: {
-          hero: "#Fcd34d",    // soft golden yellow
-        },
-      },
-      maxWidth: {
-        1440: "1440px",
-        1216: "1216px",
-        768: "768px",
-      },
-      listStyleImage: {
-        checkmark: "url('/check.svg')",
+      boxShadow: {
+        header: "0 10px 30px rgba(47,72,88,0.15)",
       },
     },
   },

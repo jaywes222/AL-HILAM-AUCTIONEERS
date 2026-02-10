@@ -13,12 +13,12 @@ function ClientsPage() {
   return (
     <>
       <SeoMetadata
-        title="Our Clients | Al-Hilam Tracking"
-        description="Al-Hilam Tracking is a leading provider of advanced fleet management and vehicle tracking solutions in Kenya, with a regional presence in Kampala."
+        title="Our Clients | Al-Hilam Auctioneers"
+        description="Meet our trusted partners who collaborate with Al-Hilam Auctioneers to deliver top-notch auctioneering, storage, and asset recovery solutions across Kenya."
         type="website"
-        url="https://www.al-hilamtracking.co.ke/our-clients"
-        ogImage="https://www.al-hilamtracking.co.ke/assets/og/tracking7.jpg"
-        ogImageAlt="Al-Hilam Tracking brand showcasing advanced fleet management and vehicle tracking solutions."
+        url="https://al-hilam-auctioneers.com/our-clients"
+        ogImage="https://al-hilam-auctioneers.com/assets/og/auction.jpg"
+        ogImageAlt="Al-Hilam Auctioneers trusted clients."
       />
 
       <div className="text-[#323433] max-w-[1440px] mx-auto">

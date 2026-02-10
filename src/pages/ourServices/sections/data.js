@@ -1,69 +1,65 @@
 export const whatWeDoData = [
   {
     id: 1,
-    title: "Real Time Tracking",
+    title: "Record Search",
     description:
-      "Our GPS allows you to monitor your vehicles live. Information from GPS are transmitted to our servers providing you real time location",
+      "Access detailed records to verify ownership and trace assets efficiently.",
     link: "/services",
   },
   {
     id: 2,
-    title: "User Friendly Tracking",
+    title: "Driver & Vehicle Records",
     description:
-      "Real-time fleet GPS vehicle tracking software with information on speed and idle time monitoring. Well detailed automated report center with easy to use replays and report generation",
+      "Retrieve accurate driver and vehicle information to support investigations.",
     link: "/services",
   },
   {
     id: 3,
-    title: "Customer Support",
+    title: "Skip Trace",
     description:
-      "We offer quality services with 24/7/365 customer support. our all equipped control center ensures the support team does not miss any important alarms and alert sent by the tracker device",
+      "Locate missing vehicles quickly using modern investigative methods.",
     link: "/services",
-  },
-];
-
-export const featuresData = [
-  {
-    id: 1,
-    title: "Real-time vehicle monitoring",
-    description:
-      "Monitor your vehicles 24/7 with live location tracking, route playback, and complete movement history for full operational visibility.",
-  },
-  {
-    id: 2,
-    title: "Remote engine immobilization",
-    description:
-      "Remotely stop and restart the engine via SMS or mobile app. This feature significantly increases recovery chances in the event of theft.",
-  },
-  {
-    id: 3,
-    title: "Daily activity reports",
-    description:
-      "Access detailed daily reports showing distance travelled, speed behavior, stop points, and total stopping time for every vehicle.",
   },
   {
     id: 4,
-    title: "Geo-fencing alerts",
+    title: "Surveillance",
     description:
-      "Create virtual geographic boundaries and receive instant alerts whenever a vehicle enters or exits designated areas.",
+      "Conduct discreet monitoring to gather real-time information on assets.",
+    link: "/services",
   },
   {
     id: 5,
-    title: "Internal backup battery",
+    title: "Repossession of Motor Vehicle",
     description:
-      "Built-in backup battery keeps the tracking device operational even if the vehicle’s main battery is disconnected.",
+      "Recover vehicles safely and professionally in line with legal instructions.",
+    link: "/services",
   },
   {
     id: 6,
-    title: "Web & mobile access",
+    title: "Auctioneering",
     description:
-      "User-friendly web dashboard and mobile applications compatible with Android and iOS for seamless access anytime, anywhere.",
+      "Conduct public auctions for vehicles, chattels, movable and immovable properties.",
+    link: "/services",
   },
   {
     id: 7,
-    title: "Advanced alerts & alarms",
+    title: "Realization of Charged Securities",
     description:
-      "Receive real-time alerts for over-speeding, power cut-outs, battery disconnection, and tampering to enhance vehicle security.",
+      "Facilitate sale of immovable assets through public auction to recover debts.",
+    link: "/services",
+  },
+  {
+    id: 8,
+    title: "Repossession of Chattels",
+    description:
+      "Recover movable assets and manage disposal via public auction.",
+    link: "/services",
+  },
+  {
+    id: 9,
+    title: "Debt Recovery via Court Warrants",
+    description:
+      "Enforce recovery of debts legally through court-issued attachment warrants.",
+    link: "/services",
   },
 ];
-

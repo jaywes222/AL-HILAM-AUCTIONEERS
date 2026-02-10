@@ -16,12 +16,12 @@ function AboutUs() {
   return (
     <>
       <SeoMetadata
-        title="About Us | Al-Hilam Tracking"
-        description="Al-Hilam Tracking is a leading provider of advanced fleet management and vehicle tracking solutions in Kenya, with a regional presence in Kampala."
+        title="About Us | Al-Hilam Auctioneers"
+        description="Al-Hilam Auctioneers is a professional auctioneering and asset recovery firm in Kenya, delivering transparent, compliant, and results-driven auction and repossession services across multiple regions."
         type="website"
-        url="https://www.al-hilamtracking.co.ke/about-us"
-        ogImage="https://www.al-hilamtracking.co.ke/assets/og/tracking7.png"
-        ogImageAlt="Al-Hilam Tracking brand showcasing advanced fleet management and vehicle tracking solutions."
+        url="https://www.al-hilam-auctioneers.com/about-us"
+        ogImage="https://www.al-hilam-auctioneers.com/assets/og/auction.jpg"
+        ogImageAlt="Al-Hilam Auctioneers brand showcasing professional auction and asset recovery services."
       />
 
       <div className="text-[#323433] max-w-[1440px] mx-auto">

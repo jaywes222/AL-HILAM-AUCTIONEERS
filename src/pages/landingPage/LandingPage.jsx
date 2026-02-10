@@ -2,24 +2,7 @@ import useScrollToHash from "@/hooks/useScrollToHash";
 import LandingWrapper from "../../components/LandingWrapper";
 import SeoMetadata from "../../components/SeoMetadata";
 import ScrollToTop from "../../utilities/ScrollToTop";
-import {
-  // FaqSection,
-  // FeatureSection,
-  HeroSection,
-  // Partners,
-  // WhatWeDo,
-} from "./sections";
-
-// const components = [
-//   {
-//     title: "what we do",
-//     component: <WhatWeDo />,
-//   },
-//   {
-//     title: "faq",
-//     component: <FaqSection />,
-//   },
-// ];
+import {HeroSection} from "./sections";
 
 function LandingPage() {
 
@@ -28,23 +11,16 @@ function LandingPage() {
   return (
     <>
       <SeoMetadata
-        title="Al-Hilam Tracking - Advanced Fleet Management and Vehicle Tracking Solutions"
-        description="Al-Hilam Tracking is a leading provider of advanced fleet management and vehicle tracking solutions in Kenya, with a regional presence in Kampala."
+        title="Al-Hilam Auctioneers - Professional Asset Recovery & Auctioneering Services"
+        description="Al-Hilam Auctioneers is Kenya's leading specialist in motor vehicle repossession, auctioneering & commission agents. Serving individuals and financial institutions with competence and professionalism since 2020."
         type="website"
-        url="https://www.al-hilamtracking.co.ke"
-        ogImage="https://www.al-hilamtracking.co.ke/assets/og/tracking7.jpg"
-        ogImageAlt="Al-Hilam Tracking brand showcasing advanced fleet management and vehicle tracking solutions."
+        url="https://al-hilam-auctioneers.com/"
+        ogImage="https://al-hilam-auctioneers.com/assets/og/auction.jpg"
+        ogImageAlt="Al-Hilam Auctioneers - Professional Auctioneers & Asset Recovery Specialists."
       />
       <div className="w-screen overflow-x-hidden bg-white">
         <ScrollToTop />
         <HeroSection />
-        {/* <Partners />
-        <FeatureSection />
-        {components.map(({ component, title }) => (
-          <LandingWrapper key={title} title={title}>
-            {component}
-          </LandingWrapper>
-        ))} */}
       </div>
     </>
   );

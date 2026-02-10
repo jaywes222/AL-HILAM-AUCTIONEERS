@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import heroImage from "/src/assets/images/hero-section/tracking7.jpg";
+import heroImage from "/src/assets/images/hero-section/auction.jpg";
 
 function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -31,18 +31,19 @@ function HeroSection() {
     >
       {/* BACKGROUND */}
       <div className="absolute inset-0 w-full">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-light via-green-light to-green-light/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary via-blue-tint to-secondary/80" />
 
-        {/* Orb – primary green */}
+        {/* Orb – purple accent */}
         <div
-          className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/8 rounded-full blur-3xl animate-pulse-slow"
+          className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"
           style={{
             transform: `translate(${mousePosition.x * 0.2}px, ${mousePosition.y * 0.2}px)`,
           }}
         />
-        {/* Orb – yellow accent */}
+
+        {/* Orb – soft blue */}
         <div
-          className="absolute bottom-1/4 -right-20 w-96 h-96 bg-yellow-hero/8 rounded-full blur-3xl animate-pulse-slow animation-delay-2000"
+          className="absolute bottom-1/4 -right-20 w-96 h-96 bg-blue-soft/15 rounded-full blur-3xl animate-pulse-slow animation-delay-2000"
           style={{
             transform: `translate(${mousePosition.x * -0.2}px, ${mousePosition.y * -0.2}px)`,
           }}
@@ -50,11 +51,11 @@ function HeroSection() {
 
         {/* Grid texture */}
         <div
-          className="absolute inset-0 opacity-[0.02]"
+          className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px)
+              linear-gradient(rgba(47,72,88,0.15) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(47,72,88,0.15) 1px, transparent 1px)
             `,
             backgroundSize: "60px 60px",
           }}
@@ -67,59 +68,56 @@ function HeroSection() {
 
           {/* TEXT */}
           <div className="flex flex-col gap-6 md:gap-7">
-
-            {/* Badge */}
             <div className="inline-flex">
-              <div className="px-5 py-2 rounded-full bg-grad-active-bg border border-primary/25">
-                <span className="text-xs md:text-sm font-semibold text-green-header uppercase tracking-wide">
-                  About Al-Hilam Tracking
+              <div className="px-5 py-2 rounded-full bg-white/50 border border-primary/30">
+                <span className="text-xs md:text-sm font-semibold text-blue-dark uppercase tracking-wide">
+                  About Al-Hilam Auctioneers
                 </span>
               </div>
             </div>
 
-            {/* Headline */}
-            <h1 className="font-bold leading-[1.1] text-4xl sm:text-5xl lg:text-6xl">
-              <span className="text-secondary">Advanced </span>
-              <span className="text-primary">fleet management</span>
-              <span className="text-secondary"> and </span>
-              <span className="text-yellow-hero">vehicle tracking</span>
-              <span className="text-secondary"> solutions</span>
+            <h1 className="font-bold leading-[1.1] text-4xl sm:text-5xl lg:text-6xl text-blue-dark">
+              Trusted{" "}
+              <span className="text-transparent bg-gradient-to-r from-blue-soft to-primary bg-clip-text">
+                auctioneers
+              </span>{" "}
+              and{" "}
+              <span className="text-transparent bg-gradient-to-r from-primary to-purple-soft bg-clip-text">
+                asset recovery
+              </span>{" "}
+              specialists
             </h1>
 
-
-            {/* Body */}
             <div className="max-w-xl space-y-4">
-              <p className="text-lg lg:text-xl text-grey-neutral leading-relaxed">
-                Al-Hilam Tracking is a leading provider of{" "}
-                <span className="font-medium text-secondary">
-                  advanced fleet management and vehicle tracking solutions
+              <p className="text-lg lg:text-xl text-grey-darker leading-relaxed">
+                Al-Hilam Auctioneers is a professional auctioneering and asset
+                recovery firm delivering{" "}
+                <span className="font-medium text-blue-dark">
+                  transparent, compliant, and results-driven
                 </span>{" "}
-                in Kenya, with a regional presence in Kampala.
+                solutions.
               </p>
-
               <p className="text-base lg:text-lg text-grey-neutral">
-                We support banks and financial institutions by enabling real-time
-                monitoring and secure record-keeping of financed and collateral-held
-                vehicles through our intuitive platform—accessible on desktop,
-                Android, and iOS.
+                We partner with financial institutions, corporates, and
+                individuals across Kenya to recover value efficiently and with
+                integrity.
               </p>
             </div>
-
           </div>
 
           {/* IMAGE */}
           <div className="relative">
             {/* Corner accents */}
             <div className="absolute -top-6 -left-6 w-24 h-24 border-t-4 border-l-4 border-primary/35 rounded-tl-3xl animate-float" />
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-4 border-r-4 border-yellow-hero/35 rounded-br-3xl animate-float" />
+            <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-4 border-r-4 border-blue-soft/40 rounded-br-3xl animate-float" />
 
             {/* Card */}
-            <div className="relative rounded-3xl overflow-hidden bg-green-light p-2 shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden bg-white/60 p-2 shadow-2xl">
               <div className="rounded-2xl overflow-hidden">
                 <LazyLoadImage
                   effect="blur"
                   src={heroImage}
-                  alt="Al-Hilam Tracking"
+                  alt="Al-Hilam Auctioneers"
                   className="w-full h-full object-cover"
                 />
               </div>

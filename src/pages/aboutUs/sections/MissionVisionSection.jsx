@@ -2,51 +2,33 @@ function MissionVisionSection() {
   const cards = [
     {
       title: "Our Mission",
-      description: `To empower businesses and financial institutions through cutting-edge tracking technology,
-      ensuring the safety, accountability, and efficient management of their vehicle assets.`,
-      gradient: "from-primary to-green-header",
-      line: "from-primary to-green-footer",
+      description: `We strive to provide the best quality and unique services to our clients without harming relationships with their customers.
+      We commit to delivering assignments with minimum time, cost, and absolute honesty.`,
+      gradient: "from-blue-soft to-primary",
+      line: "from-primary to-blue-soft",
     },
     {
       title: "Our Vision",
-      description: `To be the most trusted and preferred vehicle tracking and fleet management partner across the
-      financial and logistics sectors, delivering smart solutions that enhance security, transparency, and
-      control.`,
-      gradient: "from-yellow-hero to-green-footer",
-      line: "from-green-footer to-primary",
-    },
-    {
-      title: "Our Strength",
-      description: `At Al-Hilam Tracking, our strength lies in our innovative technology, reliability, and commitment to
-      client satisfaction. With a robust tracking platform, experienced team, and seamless integration
-      with mobile and desktop devices, we ensure real-time accuracy, data security, and operational
-      efficiency for our clients.`,
-      gradient: "from-primary to-green-header",
-      line: "from-primary to-green-footer",
-    },
-    {
-      title: "Our Goal",
-      description: `To continuously improve and expand our services, providing reliable and innovative tracking
-      solutions that support our clients’ operational and strategic objectives, while setting new
-      standards in the tracking industry.`,
-      gradient: "from-yellow-hero to-green-footer",
-      line: "from-green-footer to-primary",
+      description: `To be the preferred motor vehicle recovery and investigation company in Kenya, offering services
+      fully compliant with the laws of Kenya.`,
+      gradient: "from-primary to-purple-soft",
+      line: "from-blue-soft to-primary",
     },
   ];
 
   return (
     <section className="relative max-w-7xl w-full mx-auto py-12 md:py-16 px-4 md:px-8">
-      {/* Section Header */}
+      {/* Header */}
       <div className="flex flex-col items-center gap-4 mb-10">
-        <h3 className="text-center font-bold text-xl md:text-3xl lg:text-4xl text-secondary">
+        <h3 className="text-center font-bold text-xl md:text-3xl lg:text-4xl text-blue-dark">
           Our guiding{" "}
-          <span className="text-transparent bg-gradient-to-r from-primary to-green-header bg-clip-text">
+          <span className="text-transparent bg-gradient-to-r from-blue-soft to-primary bg-clip-text">
             purpose
           </span>{" "}
           and direction
         </h3>
-        <p className="text-grey-neutral text-center max-w-2xl text-sm md:text-base">
-          What drives us and where we are headed as Al-Hilam Tracking
+        <p className="text-grey-darker text-center max-w-2xl text-sm md:text-base">
+          What drives us and where we are headed as Al-Hilam Auctioneers
         </p>
       </div>
 
@@ -55,25 +37,25 @@ function MissionVisionSection() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="group relative bg-green-light border-2 border-grey-light rounded-2xl p-6 md:p-8
-                       shadow-lg shadow-grey-light/50 transition-all duration-500
-                       hover:shadow-xl hover:shadow-primary/10 hover:border-primary/30"
+            className="
+              group relative bg-secondary/60 border border-blue-soft/40
+              rounded-2xl p-6 md:p-8
+              shadow-lg transition-all duration-500
+              hover:shadow-xl hover:border-primary/40
+            "
             style={{ animation: `fadeInUp 0.6s ease-out ${0.2 + index * 0.15}s both` }}
           >
             <div className="flex flex-col gap-4">
-              {/* Title */}
               <h4
                 className={`font-bold text-lg md:text-xl text-transparent bg-gradient-to-r ${card.gradient} bg-clip-text`}
               >
                 {card.title}
               </h4>
 
-              {/* Description */}
-              <p className="text-grey-neutral text-sm md:text-base leading-relaxed">
+              <p className="text-grey-darker text-sm md:text-base leading-relaxed">
                 {card.description}
               </p>
 
-              {/* Decorative Line */}
               <div
                 className={`w-12 h-0.5 rounded-full bg-gradient-to-r ${card.line}`}
               />
@@ -82,7 +64,6 @@ function MissionVisionSection() {
         ))}
       </div>
 
-      {/* Animations */}
       <style jsx>{`
         @keyframes fadeInUp {
           from {
