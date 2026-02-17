@@ -1,10 +1,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/pupazkov/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp about.html $DEPLOYPATH
-    - /bin/cp services.html $DEPLOYPATH
-    - /bin/cp contact.html $DEPLOYPATH
-    - /bin/cp styles.css $DEPLOYPATH
-    - /bin/cp script.js $DEPLOYPATH
-    - /bin/cp -r assets/ $DEPLOYPATH
+    - rm -rf $DEPLOYPATH/*
+    - /bin/cp -r dist/* $DEPLOYPATH
